@@ -35,27 +35,24 @@ function setDv()
   /* 
     settings =     
     {
-      namesWork=[Work Sample], 
+       namesWork=[Work Sample], 
        file=Spreadsheet, 
        rowsHeader=[5.0], 
        columns=[[1,2,3,5]], 
        idsSource=[1W2M_SardPuzPI5zX5ByTvrSZmls313RSCD80Z2fhL18], 
        namesData=[Data Sample]
      }                                                   
-  */
-
+  */  
   // get settings.
-  var Sets = new SetsDV(settings); 
-  
+  var Sets = new SetsDV(settings);   
   // settings.namesWork, settings.namesData, settings.idsSource, settings.rowsHeader, settings.columns);
   
   // save this settings to PropertiesService
-  setUserProperty(JSON.stringify(Sets), C_USER_PROPERTY_DV); // getUserProperty(C_USER_PROPERTY_DV);
-  Logger.log(getUserProperty(C_USER_PROPERTY_DV));
-  
+  setUserProperty(JSON.stringify(Sets), C_USER_PROPERTY_DV); // getUserProperty(C_USER_PROPERTY_DV);  
   
   // make first DV rules for sheets with data.
   makeFirstDvRules(Sets);
+  Logger.log(Sets);
   
   // write and set onEdit trigger
   setTriggerOnEdit('dvOnEdit');
@@ -87,19 +84,6 @@ function setDv()
                                      |___/              
 --------------------------------------------------------------------
 */
-
-function test_getSets()
-{
-  var namesWork = ['Work Sample'];
-  var namesData = ['Data Sample'];
-  
-  var sets = new SetsDV(namesWork, namesData, ['1W2M_SardPuz...13RSCD80Z2fhL18']); // all data sheets are in current file
-  
-  Logger.log(JSON.stringify(sets));
-  
-  return sets;
-
-}
 /* SetsDV
   
   main object
@@ -159,10 +143,9 @@ function SetsDV(settings, sortedDataSets)
   var l = namesWork.length;
   
   // if optional arrays are omited
-  if (!idsFileData) { idsFileData = getFilledArray(false, l); }
-  if (!rowsHeader) { rowsHeader = getFilledArray(false, l); }
-  if (!columnsList) { columnsList = getFilledArray(false, l); }  
-  
+  if (!idsFileData) { idsFileData = getFilledArray(false, l); } //[16hL0Ip9rN8SFHkinBbN-1xUSfUQu5aKvdA2rEgOWSFM, ]
+  if (!rowsHeader) { rowsHeader = getFilledArray(false, l); } // [5.0, 2.0]
+  if (!columnsList) { columnsList = getFilledArray(false, l); }  // [[1, 2, 3, 5], [1, 6, 7, 8]]
   
   var self = this;
 
@@ -184,16 +167,23 @@ function SetsDV(settings, sortedDataSets)
   for (var i = 0; i < l; i++)
   {
     // sheet
-      keyWork = namesWork[i];
+      keyWork = namesWork[i]; // 'Work Sample'
       if (!(keyWork in sheetsWork)) sheetsWork[keyWork] = {}; // connections inside
       sheetWork = sheetsWork[keyWork]; 
+      /* {namesWork=[Work Sample, 1 To many Sample], 
+          file=Spreadsheet, 
+          rowsHeader=[5.0, 2.0], 
+          columns=[[1, 2, 3, 5], [1, 6, 7, 8]], 
+          idsSource=[16hL0Ip9rN8SFHkinBbN-1xUSfUQu5aKvdA2rEgOWSFM, ], 
+          namesData=[Data Sample, Data Sample2]}
+      */
     
     // data sheet
       idFileData = idsFileData[i] || '0'; 
       // zero if file = this file
       if (idFileData == SpreadsheetApp.getActive().getId()) idFileData = '0';
       nameData = namesData[i];
-      keyData = idFileData + nameData;
+      keyData = idFileData + nameData + '-' + columnsList[i].join(';');
       
       if (!(keyData in sheetsData))
       {
@@ -204,13 +194,27 @@ function SetsDV(settings, sortedDataSets)
         sheetsData[keyData] = new SheetData(nameData, idsFileData[i], rowsHeader[i], columnsList[i]);      
       }
       sheetData = sheetsData[keyData];
+      /*
+        {s=>, 
+         d={
+           Earth={Asia={China=[Pekin]}, 
+           Europe={Greece=[Athenes], 
+           Italy=[Rome, Milan], 
+           Britain=[London, Manchester, Liverpool], 
+           France=[Paris, Lion]}, 
+           Africa={Algeria=[Algiers]}, 
+           ...}, 
+         f=0.0, 
+         h=[Planet, Mainland, Country, City], 
+         l=4.0, n=Data Sample}      
+      */
       
     // connection 
       if (!(keyData in sheetWork))
       {
         // create new connection
-        sheetWork[keyData] = getConnection(keyWork, sheetData.h);
-        //                                 ^ sheetName   ^ headers   
+        sheetWork[keyData] = getConnection(keyWork, sheetData.h, rowsHeader[i], columnsList[i]);
+        //                                 ^ sheetName   ^ headers  
       }  
   }
   
@@ -283,8 +287,8 @@ function getConnection(nameSheet, headers, rowHeader, columns)
   
   if (rowHeader && columns)
   {
-    connection.r = r;
-    connection.c = c;  
+    connection.r = rowHeader;
+    connection.c = columns; 
     return connection;
   }
   

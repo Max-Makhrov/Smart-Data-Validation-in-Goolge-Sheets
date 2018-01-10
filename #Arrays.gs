@@ -2,6 +2,7 @@
 function test_intersection()
 {
 Logger.log(arrayIntersection( [1, 2, 3, "a"], [1, "a", 2], ["a", 1] )); // Gives [1, "a"]; 
+Logger.log(arrayIntersection( [1], [1,6,7,8] )); // Gives [1]; 
 
 }
 

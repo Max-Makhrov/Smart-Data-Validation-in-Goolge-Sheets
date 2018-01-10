@@ -14,7 +14,7 @@ var C_SOURCE_TRIGGER = 'SPREADSHEETS';
 */
 function setTriggerOnEdit(nameFunction)
 {
-  if (checkTriggerExists('test_getSets', C_SOURCE_TRIGGER)) { return -1; } // trigger exists
+  if (checkTriggerExists(nameFunction, C_SOURCE_TRIGGER)) { return -1; } // trigger exists
   var ss = SpreadsheetApp.getActive();
   ScriptApp.newTrigger(nameFunction)
     .forSpreadsheet(ss)
@@ -22,6 +22,8 @@ function setTriggerOnEdit(nameFunction)
     .create();
 
 }
+
+
 
 /*
   USAGE

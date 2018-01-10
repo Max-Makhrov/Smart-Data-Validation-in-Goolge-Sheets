@@ -55,7 +55,7 @@ function ObjectOnEdit(e)
   
   self.getLastRow = r.getLastRow();
   self.getLastCol = r.getLastColumn();
-  
+
   
   // get value or values
   // value    [[value]];
@@ -86,8 +86,7 @@ function ObjectOnEdit(e)
   self.file = file;
   self.idFile = idFile;
   self.nameSheet = nameSheet;
-  self.idSheet = idSheet;
-  
+  self.idSheet = idSheet;  
 }
 
 

@@ -85,9 +85,16 @@ function getDvSettings()
   self.values.columns = columns === '' ? false : columns;
   
   // split columns lists by comma
+  var cols = [];
   for (var i = 0, l = columns.length; i < l; i++)
-  {
-    if (columns) { columns[i] = columns[i].split(C_NUMBER_DELIMETER); }
+  {    
+    if (columns) 
+    {   
+      cols = columns[i].split(C_NUMBER_DELIMETER);       
+      for(var k=0; k<cols.length;k++) cols[k] = +cols[k]; // to integers
+      columns[i] = cols;
+    }
+    
   }
   
   return self.values;

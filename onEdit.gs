@@ -23,6 +23,7 @@ function testOnEditTwice_(range)
 
 function dvOnEdit(e)
 {
+
   var ObjEdit = new ObjectOnEdit(e); 
   /*
   ObjEdit =
@@ -44,8 +45,8 @@ function dvOnEdit(e)
       "idSheet":1841614889}
   
   */
-  var ObjDv = getDvObject(ObjEdit);
-  
+  var ObjDv = getDvObject(ObjEdit);  
+
   /* ObjDv = 
       {"connections":[{"r":5,"c":[1,2,3,5],"columnsChanged":[5,3,2],"name":"0Data Sample"}],
       "dataSets":{"0Data Sample":{"n":"Data Sample","d":{"Earth":{"Europe":{"Britain":...}},"h":["Planet","Mainland","Country","City"],"l":4,"s":">","f":0}}} 
