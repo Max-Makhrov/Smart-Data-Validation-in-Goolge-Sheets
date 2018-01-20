@@ -27,5 +27,5 @@ Create dependent drop-down lists in your sheets.
 Limits are related to Google quotas: https://developers.google.com/apps-script/guides/services/quotas
 
 Notes:
-* All \*.gs liles from code source are modules in a project. Master.gs is a compressed verstion of all the files. It's made in order to reduce copy-paste work of installstion.
+* All \*.gs liles from code source are modules in a project. Master.gs is a compressed version of all the files. It's made in order to reduce copy-paste work of installation.
 * If you want to see the code as it was developed, with all comments in a single file, please make a copy of this Google Sheet: https://docs.google.com/spreadsheets/d/16hL0Ip9rN8SFHkinBbN-1xUSfUQu5aKvdA2rEgOWSFM/edit#gid=227172849. Open > Go To File > Make a Copy
