@@ -1,6 +1,6 @@
 // User Settings
 var C_USER_SETTINGS_SHEET = '_Dv_Ini_'; // name of sheet with settings
-var C_SORT_DV_DATA = true; // set to false to leave data on sheets unsorted
+var C_SORT_DV_DATA = false; // set to false to leave data on sheets unsorted
 
 
 
