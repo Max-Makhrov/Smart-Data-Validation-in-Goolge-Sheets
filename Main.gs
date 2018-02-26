@@ -42,7 +42,7 @@ function setDv()
        idsSource=[1W2M_SardPuzPI5zX5ByTvrSZmls313RSCD80Z2fhL18], 
        namesData=[Data Sample]
      }                                                   
-  */  
+  */ 
   // get settings.
   var Sets = new SetsDV(settings);   
   // settings.namesWork, settings.namesData, settings.idsSource, settings.rowsHeader, settings.columns);
@@ -402,7 +402,7 @@ function SheetData(nameSheet, idFile)
   var range = sheet.getDataRange();
   var data = getSmartSort(range.getDisplayValues());
   // save sorted data if user wants the data to be sorted
-  range.setValues(data); 
+  if (C_SORT_DV_DATA) { range.setValues(data); }
   
   self.d = getDvData(data); // function returning object
   self.h = data[0]; // TODO: find headers in some smarter way
