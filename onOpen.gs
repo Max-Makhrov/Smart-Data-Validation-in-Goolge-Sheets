@@ -12,7 +12,7 @@
  *     running in, inspect e.authMode.
  */
 function onOpen() {
-
+  var ui = SpreadsheetApp.getUi(); 
   ui.createMenu('Smart Data Validation')
       .addItem('Set/Update', 'setDv')
       //.addItem('Test Trigger', 'test_dvOnEdit')
