@@ -1,8 +1,8 @@
 # Smart-Data-Valigation-in-Goolge-Sheets
-Create dependent drop-down lists in your sheets.
+Create dependent drop-down (DDL) lists in your sheets.
 
 # Features
-1. Set 2 and more level dependent drop-down lists (DDLs)
+1. Set 2 and more level dependent drop-down lists.
 2. Set 1 and more DDLs on a single sheet.
 3. Set 1 and more DDLs from single data sheet.
 4. Set DDLs from another files as a source data.
@@ -32,7 +32,7 @@ Create dependent drop-down lists in your sheets.
 
 *Tip.* The sheet with settings is called “_Dv_Ini_”, it contains some hidden columns. Usually, a user does not need to make these settings.
 
-### Advanced settings
+## Advanced settings
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl111.png?w=676)
 
 1.  **Source file Id.**  If the file is the same, leave this column blank. If you need to make the external file as a source, please make sure to fill this column.
@@ -60,5 +60,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzI4NjcwMzFdfQ==
+eyJoaXN0b3J5IjpbMTUyMTE5MTk2MV19
 -->
