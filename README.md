@@ -27,7 +27,8 @@ Create dependent drop-down (DDL) lists in your sheets.
 
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl101.png)
 
-7. The sample sheets will appear. See the work in the sheet "Work Sample". See setting in the sheet "_Dv_Ini_"
+7. To run the code first time, pass the verification process ↑
+8. The sample sheets will appear. See the work in the sheet "Work Sample". See setting in the sheet "_Dv_Ini_"
 
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl7.png)
 
@@ -66,5 +67,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ5NjA0NjA1XX0=
+eyJoaXN0b3J5IjpbLTE1OTAyNDgyODVdfQ==
 -->
