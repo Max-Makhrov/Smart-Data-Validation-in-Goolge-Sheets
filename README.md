@@ -22,12 +22,15 @@ Create dependent drop-down (DDL) lists in your sheets.
 5. The new menu will appear at the right. 
 
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl9.png)
+
 6. Go to `Smart Data Validation > Set/Update`
 
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl101.png)
+
 7. The sample sheets will appear. See the work in the sheet "Work Sample". See setting in the sheet "_Dv_Ini_"
 
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl7.png)
+
 8. Have fun!
 
 *Tip.* Name columns the same in the datasheet and in the worksheet. The script will find the number of columns for data validation.
@@ -63,5 +66,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTc2NzY0MzddfQ==
+eyJoaXN0b3J5IjpbODQ5NjA0NjA1XX0=
 -->
