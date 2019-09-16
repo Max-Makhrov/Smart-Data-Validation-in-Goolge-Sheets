@@ -32,7 +32,7 @@ Create dependent drop-down (DDL) lists in your sheets.
 
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl7.png)
 
-8. Have fun!
+9. Have fun!
 
 *Tip.* Name columns the same in the datasheet and in the worksheet. The script will find the number of columns for data validation.
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl8.png)
@@ -67,5 +67,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTAyNDgyODVdfQ==
+eyJoaXN0b3J5IjpbMTgwNDE0NjE3OF19
 -->
