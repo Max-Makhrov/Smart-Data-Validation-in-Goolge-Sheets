@@ -12,7 +12,14 @@ Create dependent drop-down lists in your sheets.
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl101.png)
 7. The sample sheets will appear. See the work in the sheet "Work Sample". See setting in the sheet "_Dv_Ini_"
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl7.png)
-9. Have fun!
+8. Have fun!
+
+*Tip.* Name columns the same in the datasheet and in the worksheet. The script will find the number of columns for data validation.
+![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl8.png)
+
+### Advanced settings
+
+The sheet with settings is called “_Dv_Ini_”, it contains some hidden columns. Usually, a user does not need to make these settings
 
 # Features
 1. Set 2 and more level dependent drop-down lists (DDLs)
@@ -41,5 +48,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MjAwNzU1OV19
+eyJoaXN0b3J5IjpbLTE0NzE3NTcyNDNdfQ==
 -->
