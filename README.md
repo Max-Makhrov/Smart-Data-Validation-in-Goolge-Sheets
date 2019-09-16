@@ -35,6 +35,7 @@ Create dependent drop-down (DDL) lists in your sheets.
 9. Have fun!
 
 *Tip.* Name columns the same in the datasheet and in the worksheet. The script will find the number of columns for data validation.
+
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl8.png)
 
 *Tip.* The sheet with settings is called “_Dv_Ini_”, it contains some hidden columns. Usually, a user does not need to make these settings.
@@ -46,6 +47,7 @@ Create dependent drop-down (DDL) lists in your sheets.
 2.  **Header Row**  and  **Columns**. If column names in the datasheet and in the worksheet are the same, leave these columns blank. If you need to set different column names or to use different headers, please fill. `Header row`  = a number of a row with column names in the worksheet.  `Columns` is a comma-separated list of columns for data validation.
 
 *Tip.* **How to get file id.** Copy it from a file name, see a picture:
+
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl12.png?w=676)
 
 
@@ -67,5 +69,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDE0NjE3OF19
+eyJoaXN0b3J5IjpbMTYyMjcyOTRdfQ==
 -->
