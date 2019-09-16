@@ -6,12 +6,13 @@ Create dependent drop-down lists in your sheets.
 2. Go to menu `Tools > Script Editor`
 3. Paste the code from here: https://github.com/Max-Makhrov/Smart-Data-Valigation-in-Goolge-Sheets/blob/master/Master.gs.
 4. Reload the Google Sheets file
-5. The new menu will appear at the right. Go to `Smart Data Validation > Set/Update`
+5. The new menu will appear at the right. 
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl9.png)
-
+6. Go to `Smart Data Validation > Set/Update`
 ![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl101.png)
 7. The sample sheets will appear. See the work in the sheet "Work Sample". See setting in the sheet "_Dv_Ini_"
-8. Have fun!
+![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl7.png)
+9. Have fun!
 
 # Features
 1. Set 2 and more level dependent drop-down lists (DDLs)
@@ -40,5 +41,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5NTM5Njc0XX0=
+eyJoaXN0b3J5IjpbMTk5MjAwNzU1OV19
 -->
