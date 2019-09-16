@@ -1,6 +1,19 @@
 # Smart-Data-Valigation-in-Goolge-Sheets
 Create dependent drop-down lists in your sheets.
 
+# Features
+1. Set 2 and more level dependent drop-down lists (DDLs)
+2. Set 1 and more DDLs on a single sheet.
+3. Set 1 and more DDLs from single data sheet.
+4. Set DDLs from another files as a source data.
+5. Set DDLs in a custom order of columns.
+6. Auto-complete values when the only value is left.
+7. Auto-delete validation when user deletes values in previous level
+
+*Tip.* When you set new rule, use auto column numbers detection. It works when column names are the same in source and work sheet.
+
+*Tip.* Validation works when user copies data down (uses `[Ctrl + V]` or `[Ctrl + D]` keys).
+
 # Setup
 1. Open your Sheets
 2. Go to menu `Tools > Script Editor`
@@ -26,19 +39,10 @@ Create dependent drop-down lists in your sheets.
 2.  **Header Row**  and  **Columns**. If column names in the datasheet and in the worksheet are the same, leave these columns blank. If you need to set different column names or to use different headers, please fill. `Header row`  = a number of a row with column names in the worksheet.  `Columns` is a comma-separated list of columns for data validation.
 
 *Tip.* **How to get file id.** Copy it from a file name, see a picture:
+![enter image description here](https://sheetswithmaxmakhrov.files.wordpress.com/2018/01/ddl12.png?w=676)
 
 
 
-# Features
-1. Set 2 and more level dependent drop-down lists (DDLs)
-2. Set 1 and more DDLs on a single sheet.
-3. Set 1 and more DDLs from single data sheet.
-4. Set DDLs from another files as a source data.
-5. Set DDLs in a custom order of columns.
-6. Auto-complete values when the only value is left.
-7. Auto-delete validation when user deletes values in previous level
-8. When you set new rule, use auto column numbers detection. It works when column names are the same in source and work sheet.
-9. Validation works when user copies data down (uses Ctrl + V or Ctrl + D keys).
 
 # Limitations
 1. Up to 500 values in a single DDL
@@ -56,5 +60,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDE1MjIwNF19
+eyJoaXN0b3J5IjpbLTE4NzI4NjcwMzFdfQ==
 -->
