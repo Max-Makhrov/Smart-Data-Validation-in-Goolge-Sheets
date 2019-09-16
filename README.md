@@ -1,5 +1,6 @@
 # Smart-Data-Valigation-in-Goolge-Sheets
-Create dependent drop-down (DDL) lists in your sheets.
+Create dependent drop-down (DDL) lists in your sheets. 
+Note: I do not support this version of DDLs. Plese see this article to see recommended method.
 
 # Features
 1. Set 2 and more level dependent drop-down lists.
@@ -69,5 +70,5 @@ Notes:
 Notes:
 * Compressed the code with https://jscompress.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjcyOTRdfQ==
+eyJoaXN0b3J5IjpbLTE2NzIyMzUwMDBdfQ==
 -->
